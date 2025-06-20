@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Clone') {
       steps {
-        git 'https://github.com/yourusername/node-ci-app.git'
+        checkout scm
       }
     }
     stage('Build Docker Image') {
